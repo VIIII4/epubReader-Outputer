@@ -1,0 +1,407 @@
+
+P5PNKlQ3X0IrqYqy9v50ukNTUYBNMgHVDUpcFef4EcbGUWWErN
+SECRET_KEY=P5PNKlQ3X0IrqYqy9v50ukNTUYBNMgHVDUpcFef4EcbGUWWErN
+INIT_PASSWORD=00123Qweasdzxc0
+
+
+
+pyinstaller --noconsole --onefile --name "EPUBManager" `
+--add-data "converter/HTML2EPUB;converter/HTML2EPUB" `
+--add-data "converter/html2txt.py;converter" `
+--add-data "converter/txt2html2.py;converter" `
+--hidden-import PyQt6.QtWebEngineWidgets `
+--hidden-import PyQt6.Qsci `
+--icon=app.ico `
+app.py
+
+
+
+
+我现在写好了一个能够实时编辑图书文件文件的程序，请给我的程序设计几个ico
+
+核心功能关键词
+书籍/文档
+📖 书本轮廓、翻页动态、堆叠书籍、打开的文件图标
+色彩方向
+未来感：霓虹蓝紫 + 黑色（科技氛围）
+风格建议
+极简线条
+单色轮廓 + 负空间创意（适合任务栏小图标）
+
+
+pyinstaller --onefile --noconsole --name "EPUBManager" --add-data "converter;converter" --hidden-import PyQt6.QtWebEngineWidgets --icon="D:\tupian.ico" app.py
+
+
+C:\Users\LENOVO\AppData\Local\Programs\Python\Python312\Scripts\
+C:\Users\LENOVO\AppData\Local\Programs\Python\Python312\
+
+C:\Users\LENOVO\AppData\Local\Programs\Python\Python312
+
+
+
+
+
+
+
+访问码
+73xk
+解压码
+1998@www.98T.la
+解压码2
+https://link3.cc/zscc4774
+
+
+
+
+
+pyinstaller --noconsole --onefile --name "EpubManager" \
+--add-data "converter;converter" \
+--hidden-import PyQt6.QtWebEngineWidgets \
+--hidden-import xml.etree.ElementTree \
+app.py
+
+根据requirements.txt丰富打包命令，并给出windows版的命令
+
+pyinstaller --noconsole --onefile --name "EpubManager" ^
+--add-data "converter;converter" ^
+--hidden-import PyQt6.QtWebEngineWidgets ^
+--hidden-import xml.etree.ElementTree ^
+--collect-submodules chardet ^
+--collect-submodules lxml ^
+--collect-submodules python_dateutil ^
+app.py
+
+这样的命令无法在命令行中执行，改成能在命令行中执行的
+
+
+
+
+
+
+
+
+
+mermaid
+MarkDown
+
+学习开发流程需求
+
+经营公众号
+
+晒太阳
+
+还有些什么 “图” ？（图形化逻辑の方式？）
+
+AI大模型 像 刚毕业的大学生
+【模型微调，知识库，长文本】 像 大学后进了某家公司进行专业化工作后的社会人。
+期待未来算力进步了之后每个人都能够拥有自己的AI，就像人一样多样化，知识库是喂养AI的商品。
+
+
+
+下一步开发计划：
+1. [ ] EPUB元数据数据库同步
+2. [ ] 文件操作审计日志
+3. [ ] 双屏Markdown编辑器
+4. [ ] Windows右键菜单集成
+5. [ ] 全文搜索功能
+
+
+pip install PyQt6-WebEngine
+
+
+
+
+用可以在目录里面打开任意epub文件
+用户可以指定访问目录，同时添加默认目录
+默认目录为项目目录的primary fileSet文件夹，用os实现
+
+删除 EPUB 文件中的特定数据。数据包括title,author,指定章节的名字和指定章节里的文章内容
+实现erase模块中的EpubManager的delete_epub_metadata方法，可以大幅改动delete_epub_metadata方法 establish模块中的epub文件生成可能有助于你的工作
+
+添加新的方法，实现（删除 EPUB 文件中的特定数据。数据包括title,author,指定章节的名字和指定章节里的文章内容）
+establish模块中的epub文件生成可能有助于你的工作
+
+
+
+
+
+
+错误 [1
+OEBPS/chapter1.xhtml (行：4)
+在 body 标签中不能有裸文本，必须包含在其他标签中，例如 p 或 div
+错误 [2
+OEBPS/nav.xhtml (行：0)
+此书籍的导航文件没有目录，也没有空目录。使用目录工具在这本书中添加一个目录。
+警告 [3
+OEBPS/chapter1.xhtml 
+这个文件不在书籍的spine文件中。所有的内容文档必须在spine文件中。你应该把它加到spine文件中。
+告 [4
+OEBPS/chapter1.xhtml 
+此文件未在书籍的manifest文件中列出。虽然这不是严格必要的，但在manifest中列出所有文件是很好的做法。要么在manifest中列出该文件，要么将其从该书籍中删除(如果它是不必要的文件)。
+警告 [5
+OEBPS/chapter2.xhtml 
+这个文件不在书籍的spine文件中。所有的内容文档必须在spine文件中。你应该把它加到spine文件中。
+警告 [6
+OEBPS/chapter2.xhtml 
+此文件未在书籍的manifest文件中列出。虽然这不是严格必要的，但在manifest中列出所有文件是很好的做法。要么在manifest中列出该文件，要么将其从该书籍中删除(如果它是不必要的文件)。
+警告 [7
+OEBPS/styles/style.css 
+本文件包含在这本书中，但没有在书籍的spine文件中列出。这意味着大多数的电子书阅读器上都看不到该文件。你应该从本书中删除此文件，或者在spine文件的适当的位置添加链接。
+
+
+
+
+错误 1]
+OEBPS/chapter1.xhtml (行：12)
+OEBPS/chapter1.xhtml (行：12列： 18)
+HTML 解析错误意味着该文件的 HTML 语法不正确。大多数阅读器会自动忽略这些错误，但可能会导致内容排版错误。这些错误通常可以自动修复，然而自动修复有时候会“自作聪明”。
+错误  2]
+OEBPS/nav.xhtml (行：0)
+此书籍的导航文件没有目录，也没有空目录。使用目录工具在这本书中添加一个目录。
+
+
+
+
+你要做的就是，将该类的方法与（方法的作用+方法接受的参数+方法输出的参数）一个一个组织好列出来
+
+
+
+
+
+
+写一个txt2html的python类，它可以完成如下操作
+
+txt
+:
+''''''
+=== 目录 ===
+
+目录
+
+封面
+
+第一章
+
+
+=== 第一章 ===
+
+第一章
+
+这是第一个段落。
+
+•
+
+列表项1
+
+•
+
+列表项2
+
+''''''
+
+
+
+转为html
+:
+''''''
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>第一章</title>
+<link rel="stylesheet" href="../styles/style.css"/></head>
+<body>
+    <section class="chapter">
+        <h1>第一章</h1>
+        <p>这是第一个段落。</p>
+        <ul>
+            <li>列表项1</li>
+            <li>列表项2</li>
+        </ul>
+    </section>
+</body>
+</html>
+''''''
+
+
+
+
+
+写一个函数，它的输入是epub文件的路径和一个命名用的字符串，输出是被解压过的文件夹（保存在原来epub文件的地方）且该文件夹的根文件夹（不是项目的根文件夹）被输入的字符串重命名
+
+
+
+
+1. 容器结构（ZIP压缩包）
+EPUB 文件本质上是一个 ZIP 压缩包，包含以下核心文件：
+
+mimetype：文件类型标识，必须位于压缩包的根目录，内容为 application/epub+zip。
+
+META-INF/container.xml：指向电子书主内容文件（如.opf文件）的路径。
+
+2. OPF 文件（内容描述）
+OPF（Open Packaging Format）文件（通常命名为 package.opf）是电子书的核心元数据描述文件，包含：
+
+元数据（<metadata>）：书名、作者、ISBN、语言等。
+
+xml
+复制
+<dc:title>书名</dc:title>
+<dc:creator>作者</dc:creator>
+<dc:language>zh-CN</dc:language>
+运行 HTML
+清单（<manifest>）：列出所有资源文件（HTML、CSS、图片等）。
+
+xml
+复制
+<item id="chapter1" href="text/chapter1.xhtml" media-type="application/xhtml+xml"/>
+运行 HTML
+骨架（<spine>）：定义阅读顺序（内容文件的排列顺序）。
+
+xml
+复制
+<itemref idref="chapter1"/>
+运行 HTML
+引导（<guide>，可选）：标记书签、封面等特殊页面。
+
+EPUB 3 已弃用 NCX，改用 HTML 导航文档。
+
+4. 导航文档（EPUB 3）
+EPUB 3 使用 nav.xhtml（必须命名为 nav）作为导航文件，基于 HTML 的 <nav> 标签实现目录、页码跳转等功能。
+
+5. 资源文件
+内容文档（XHTML）：章节内容，通常存放在 text/ 或 OEBPS/ 目录。
+
+样式表（CSS）：控制排版和样式，通常存放在 styles/ 目录。
+
+图片/多媒体：支持 PNG、JPG、SVG 等格式，通常存放在 images/ 目录。
+
+字体文件（可选）：嵌入自定义字体（需注意版权）。
+
+6. 目录结构示例
+典型的 EPUB 文件解压后结构如下：
+
+复制
+.
+├── mimetype
+├── META-INF/
+│ └── container.xml
+└── OEBPS/
+├── package.opf # OPF 文件
+├── nav.xhtml # EPUB 3 导航文件
+├── text/
+│ ├── chapter1.xhtml
+│ └── chapter2.xhtml
+├── styles/
+│ └── style.css
+└── images/
+└── cover.jpg
+
+
+“”“章节样例”“”
+
+<?xml version='1.0' encoding='utf-8'?>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+<title>富文本章节</title>
+<link rel="stylesheet" type="text/css" href="styles/style.css"/>
+</head>
+<body>
+<section class="chapter" epub_type="chapter">
+<h1 id="ch2">富文本章节</h1>
+<div class="content">
+<p>第一段落</p>
+<ul><li>项目1</li><li>项目2</li></ul>
+<p><strong>加粗文本</strong></p>
+</div>
+</section>
+
+</body></html>
+
+“”“”“”
+现在有一个文件夹路径确定，内部文件架构符合epub解压包的形式。实现函数，输入为文件夹路径，输出为epub文件
+
+该文件夹中仅仅会有"OEBPS/text"中的chapter.xhtml文件不定，函数需要根据这里面的文件情况修改相应的文件后再执行"压缩"操作
+
+
+pyinstaller --noconsole --onefile --name "EpubManager" --icon=ICO.ico --add-data "converter;converter" --hidden-import PyQt6.QtWebEngineWidgets --hidden-import xml.etree.ElementTree --collect-submodules chardet --collect-submodules lxml --collect-submodules python_dateutil app.py
+
+
+
+D:\python\epubManager\tupian.ico
+这是应用图标的位置
+据此修改打包命令
+
+pyinstaller --noconsole --onefile --name "EpubManager" --add-data "converter;converter" `
+--hidden-import PyQt6.QtWebEngineWidgets --hidden-import xml.etree.ElementTree --collect-submodules chardet `
+--collect-submodules lxml --collect-submodules python_dateutil `
+--hidden-import urllib.request --hidden-import urllib.parse `
+--hidden-import asyncio `
+--hidden-import html5lib --hidden-import html5lib.treebuilders --hidden-import html5lib.constants `
+--hidden-import bs4 --hidden-import bs4.dammit --hidden-import bs4.builder._html5lib `
+app.py
+
+
+pyinstaller --noconsole --onefile --name "EpubManager" --icon="tupian.ico" --add-data "converter;converter" `
+--hidden-import PyQt6.QtWebEngineWidgets --hidden-import xml.etree.ElementTree --collect-submodules chardet `
+--collect-submodules lxml --collect-submodules python_dateutil `
+--hidden-import urllib.request --hidden-import urllib.parse `
+--hidden-import asyncio `
+--hidden-import html5lib --hidden-import html5lib.treebuilders --hidden-import html5lib.constants `
+--hidden-import bs4 --hidden-import bs4.dammit --hidden-import bs4.builder._html5lib `
+app.py
+
+UPX 已经添加到系统环境变量中，依此修改下列命令
+
+pyinstaller --onefile --noconsole --name "EpubManager" --icon="tupian.ico" `
+--hidden-import PyQt6.QtWebEngineWidgets `
+--exclude-module PyQt6.QtQml `
+--exclude-module PyQt6.QtQuick `
+--clean --upx-dir /path/to/upx `
+app.py
+
+pyinstaller --noconsole --onefile --name "EpubManager" --icon=path/to/your/icon.ico --add-data "converter;converter" --hidden-import PyQt6.QtWebEngineWidgets --hidden-import xml.etree.ElementTree --collect-submodules chardet --collect-submodules lxml --collect-submodules python_dateutil app.py
+
+
+工具包无法打包进去，估计就是工具包的问题。要么换包，要么自己看看，看能不能修一修这个包（lib）
+当心病毒，微软检测是很有道理的
+
+python setup.py build  # 生成打包文件（输出到 build 目录）
+python setup.py bdist_msi  # 生成 Windows 安装包（.msi）
+
+FCI error 1 通常由以下原因导致：
+
+1. 路径长度超过 Windows 最大限制
+Windows 默认路径长度限制为 260 字符。若你的项目路径或依赖路径过长（例如 D:\python\epubManagerVer2.0\.venv\lib\...），会导致此错误。
+......我竟然也碰到这个错误了。。。
+
+
+
+1.图表要简单
+2.配上‘现实图片’
+3.配有‘表示因果关系的箭头‘
+4.加入“AI辅助分析数据”的相关内容（阿里云）
+
+
+想办法实现文本编辑页，或许要改一改pack、root什么的
+
+结合现有平台生成体检报告图
+展示测量数据
+推广公众号和设备
+
+
+pyinstaller -F --noconsole --add-data "converter;converter" --icon=tupian.ico app.py
+
+
+MaindeTxt2Html(input_file, output_file)
+该函数根据输入类型（单个文件或列表）批量将文本文件转换为HTML：若输入为列表，遍历每个文件构造输入输出路径，调用Txt2Html转换器处理；若为单个文件则直接构造路径处理。
+输出为某文件夹的名称
+
+Maindehtml2txt(judge,cypher,name)
+该函数将EPUB文件转换为文本文件。功能分三部分：1.根据输入文件名构建输入/输出路径；2.若judge为True，根据cypher类型(列表或字符串)转换指定章节；3.若judge为False，转换全部章节。
+
+MaindeGenerateEPUB(pointer=None,renamestr=None)
+该函数用于生成EPUB文件：1. 创建epub输出目录；2. 构建临时文件路径；3. 调用folder_to_epub方法将指定文件夹打包为epub文件。参数pointer指向临时文件位置，renamestr指定输出文件名。
+
+MaindeGenerateEpubFramework(renamestr=None)
+该函数用于生成EPUB框架文件并解压：1.创建临时仓库目录；2.设置默认重命名字符串；3.调用create_epub生成示例EPUB文件；4.调用extract_epub解压文件到重命名目录。主要用于创建可编辑的EPUB模板框架。
+
+
+你在用tkinter写一个应用的UI，目前你需要将上述四个函数集成到" def create_converter_tab(self) "中,也就是使用户在该页（已用notebook实现了个白页）可以同时可视化使用这四个函数的全部功能
